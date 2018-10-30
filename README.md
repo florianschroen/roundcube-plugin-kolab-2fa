@@ -51,8 +51,8 @@ After placing the plugin contents into Roundcube's plugins directory, the 3rd pa
 libraries need to be installed using Composer:
 
 ```
-$ composer require "endroid/qrcode" "~1.7.0" --no-update
-$ composer require "spomky-labs/otphp" "~6.0.0" --no-update
+$ composer require "endroid/qrcode" "~1.5.0" --no-update
+$ composer require "spomky-labs/otphp" "~5.0.0" --no-update
 $ composer require "enygma/yubikey" "~3.2"
 ```
 
@@ -94,7 +94,7 @@ LDAP Storage
 Define an `organizationalunit` with DN `ou=Tokens,dc=example,dc=org` to store 
 all authentication tokens.
 
-For token records, the [FreeIPA OTP schema](https://git.fedorahosted.org/cgit/freeipa.git/tree/install/share/70ipaotp.ldif) 
+For token records, the [[https://git.fedorahosted.org/cgit/freeipa.git/tree/install/share/70ipaotp.ldif | FreeIPA OTP schema]] 
 can be used. Please install this schema in your Kolab LDAP directory.
 
 This is an example record for a TOTP token registered to user doe@example.org:
